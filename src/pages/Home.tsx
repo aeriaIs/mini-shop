@@ -2,13 +2,13 @@ import { About, Feature, Footer, Header, Hero, Highlight } from "../components/l
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-black to-blue-800">
-      {/* <Header /> */}
-      {/* <Hero /> */}
-      {/* <About /> */}
-      {/* <Highlight /> */}
-      {/* <Feature /> */}
-      {/* <Footer /> */}
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <About />
+      <Highlight />
+      <Feature />
+      <Footer />
     </div>
   );
 }

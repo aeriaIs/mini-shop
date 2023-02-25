@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="bg-black mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 py-12">
+    <div className="bg-black mt-10 mx-auto xl:px-20 lg:px-12 sm:px-6 px-4 py-12">
       <div className="flex flex-col items-center justify-center">
         <div className=" flex space-x-3 items-center">
           <svg width={34} height={34} viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
