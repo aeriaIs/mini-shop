@@ -10,6 +10,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <AppRoutes />
-    </BrowserRouter>,
+    </BrowserRouter>
   </React.StrictMode>
 );
