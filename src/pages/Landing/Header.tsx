@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CustomButton } from "../../components/common";
 
 export const Header = () => {
   const [show, setShow] = useState(false);
@@ -88,34 +89,19 @@ export const Header = () => {
               />
             </svg>
             <a href="app://livestreamapp">
-             <h1 className=" font-bold tracking-wider text-2xl leading-6 text-sky-800">Mini Shop</h1>
+              <h1 className=" font-bold tracking-wider text-2xl leading-6 text-sky-800">Mini Shop</h1>
             </a>
           </div>
           <div className="hidden sm:flex flex-row space-x-4">
-            <button className="rounded-md flex space-x-2 w-20 h-8 font-semibold text-base text-blue-100 bg-main focus:outline-none hover:bg-cyan-600 hover:text-black duration-150 justify-center items-center">
-              Cart
-            </button>
+            <CustomButton>Sign Up</CustomButton>
           </div>
           {/* Burger Icon */}
           <div
             id="bgIcon"
             onClick={() => setShow(!show)}
             className={`focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200  justify-center items-center sm:hidden cursor-pointer`}>
-            <svg
-              className={`${show ? "hidden" : ""}`}
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                className=" transform duration-150"
-                d="M4 6H20"
-                stroke="#1f1f1f"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+            <svg className={`${show ? "hidden" : ""}`} width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path className=" transform duration-150" d="M4 6H20" stroke="#1f1f1f" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M4 12H20" stroke="#1f1f1f" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               <path
                 className=" transform duration-150"
@@ -126,13 +112,7 @@ export const Header = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <svg
-              className={`${show ? "block" : "hidden"}`}
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg className={`${show ? "block" : "hidden"}`} width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18 6L6 18" stroke="#1f1f1f" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M6 6L18 18" stroke="#1f1f1f" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

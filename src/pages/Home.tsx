@@ -1,4 +1,4 @@
-import { About, Feature, Footer, Header, Hero, Highlight } from "../components/landing";
+import { About, Feature, Footer, Header, Hero, Highlight } from "./Landing";
 
 function HomePage() {
   return (
